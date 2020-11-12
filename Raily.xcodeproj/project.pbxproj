@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		586119EDA2D67F61F7B3601A /* Pods_Raily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6519763C398FF52DC6AE851B /* Pods_Raily.framework */; };
+		6D0AC488255BCCA70062731D /* StationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC485255BCCA70062731D /* StationListViewController.swift */; };
+		6D0AC489255BCCA70062731D /* StationListViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC486255BCCA70062731D /* StationListViewController+Delegate.swift */; };
+		6D0AC48A255BCCA70062731D /* StationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC487255BCCA70062731D /* StationListViewModel.swift */; };
+		6D0AC494255BE14E0062731D /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC493255BE14E0062731D /* StationTableViewCell.swift */; };
+		6D0AC499255C196C0062731D /* StationDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC498255C196C0062731D /* StationDataTableViewController.swift */; };
+		6D0AC49D255C19860062731D /* StationDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC49C255C19860062731D /* StationDataViewModel.swift */; };
+		6D0AC4A1255C1D740062731D /* StationDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC4A0255C1D740062731D /* StationDataTableViewCell.swift */; };
+		6D0AC4A5255C1DB80062731D /* StationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC4A4255C1DB80062731D /* StationData.swift */; };
+		6D0AC4A8255C20880062731D /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC48C255BCCE60062731D /* Station.swift */; };
+		6D0AC4AB255C2D860062731D /* StationDataTableViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC4AA255C2D860062731D /* StationDataTableViewController+Delegate.swift */; };
+		6D0AC4AE255D33620062731D /* TrainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC4AD255D33620062731D /* TrainAPI.swift */; };
+		6D0AC4B2255D34390062731D /* TrainMovementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC4B1255D34390062731D /* TrainMovementsTableViewController.swift */; };
+		6D0AC4B7255D34DB0062731D /* TrainMovementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC4B6255D34DB0062731D /* TrainMovementsViewModel.swift */; };
+		6D0AC4BB255D354C0062731D /* TrainMovementsTableViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC4BA255D354C0062731D /* TrainMovementsTableViewController+Delegate.swift */; };
+		6D0AC4C1255D374E0062731D /* TrainMovementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC4C0255D374E0062731D /* TrainMovementTableViewCell.swift */; };
+		6D0AC4C5255D38160062731D /* Trains.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0AC4C4255D38160062731D /* Trains.storyboard */; };
+		6D243C2C24B6D85200C0121D /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D243C2B24B6D85200C0121D /* RootNavigationController.swift */; };
+		6D243C3A24B7532400C0121D /* UIRoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D243C3924B7532400C0121D /* UIRoundedCornersView.swift */; };
+		6D34786624AE1F14009BC83F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34786524AE1F14009BC83F /* AppDelegate.swift */; };
+		6D34786824AE1F14009BC83F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34786724AE1F14009BC83F /* SceneDelegate.swift */; };
+		6D34786D24AE1F14009BC83F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D34786B24AE1F14009BC83F /* Main.storyboard */; };
+		6D34786F24AE1F16009BC83F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D34786E24AE1F16009BC83F /* Assets.xcassets */; };
+		6D34787224AE1F16009BC83F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D34787024AE1F16009BC83F /* LaunchScreen.storyboard */; };
+		6D7ADA4924AF5DB500124FF6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7ADA4724AF5DB400124FF6 /* Constants.swift */; };
+		6D7ADA5224AF618A00124FF6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7ADA5124AF618A00124FF6 /* Utils.swift */; };
+		6D7ADA5424AF630A00124FF6 /* Stations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7ADA5324AF630A00124FF6 /* Stations.storyboard */; };
+		6D7ADA5B24AF655400124FF6 /* AppDelegate+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7ADA5A24AF655400124FF6 /* AppDelegate+Navigation.swift */; };
+		6D7ADA5D24AF67EF00124FF6 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7ADA5C24AF67EF00124FF6 /* UIColor+RGB.swift */; };
+		6D7ADA5F24AF68B800124FF6 /* UIWindow+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7ADA5E24AF68B800124FF6 /* UIWindow+Key.swift */; };
+		6D7ADA6924AF813200124FF6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7ADA6824AF813100124FF6 /* API.swift */; };
+		6D7ADA6C24AF89E500124FF6 /* StationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7ADA6B24AF89E500124FF6 /* StationAPI.swift */; };
+		6D7ADA7324AFB65E00124FF6 /* TrainMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7ADA7224AFB65E00124FF6 /* TrainMovement.swift */; };
+		6D840A8A253A188A00B7EC16 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D840A89253A188A00B7EC16 /* Encodable+JSON.swift */; };
+		6D840A9D253A23F000B7EC16 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D840A9C253A23F000B7EC16 /* SplashViewController.swift */; };
+		6D840AA1253A268100B7EC16 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D840AA0253A268100B7EC16 /* UIViewController+Loading.swift */; };
+		6DAF20FB2556F2F000554DBE /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF20FA2556F2F000554DBE /* Base.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		521D16436DAF43D472FD6661 /* Pods-Raily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raily.release.xcconfig"; path = "Target Support Files/Pods-Raily/Pods-Raily.release.xcconfig"; sourceTree = "<group>"; };
+		6519763C398FF52DC6AE851B /* Pods_Raily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Raily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0AC485255BCCA70062731D /* StationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListViewController.swift; sourceTree = "<group>"; };
+		6D0AC486255BCCA70062731D /* StationListViewController+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StationListViewController+Delegate.swift"; sourceTree = "<group>"; };
+		6D0AC487255BCCA70062731D /* StationListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListViewModel.swift; sourceTree = "<group>"; };
+		6D0AC48C255BCCE60062731D /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		6D0AC493255BE14E0062731D /* StationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
+		6D0AC498255C196C0062731D /* StationDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDataTableViewController.swift; sourceTree = "<group>"; };
+		6D0AC49C255C19860062731D /* StationDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDataViewModel.swift; sourceTree = "<group>"; };
+		6D0AC4A0255C1D740062731D /* StationDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDataTableViewCell.swift; sourceTree = "<group>"; };
+		6D0AC4A4255C1DB80062731D /* StationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationData.swift; sourceTree = "<group>"; };
+		6D0AC4AA255C2D860062731D /* StationDataTableViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StationDataTableViewController+Delegate.swift"; sourceTree = "<group>"; };
+		6D0AC4AD255D33620062731D /* TrainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainAPI.swift; sourceTree = "<group>"; };
+		6D0AC4B1255D34390062731D /* TrainMovementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainMovementsTableViewController.swift; sourceTree = "<group>"; };
+		6D0AC4B6255D34DB0062731D /* TrainMovementsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainMovementsViewModel.swift; sourceTree = "<group>"; };
+		6D0AC4BA255D354C0062731D /* TrainMovementsTableViewController+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrainMovementsTableViewController+Delegate.swift"; sourceTree = "<group>"; };
+		6D0AC4C0255D374E0062731D /* TrainMovementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainMovementTableViewCell.swift; sourceTree = "<group>"; };
+		6D0AC4C4255D38160062731D /* Trains.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trains.storyboard; sourceTree = "<group>"; };
+		6D243C2B24B6D85200C0121D /* RootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		6D243C3924B7532400C0121D /* UIRoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRoundedCornersView.swift; sourceTree = "<group>"; };
+		6D34786224AE1F14009BC83F /* Raily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raily.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D34786524AE1F14009BC83F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D34786724AE1F14009BC83F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6D34786C24AE1F14009BC83F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D34786E24AE1F16009BC83F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D34787124AE1F16009BC83F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D34787324AE1F16009BC83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D7ADA4724AF5DB400124FF6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6D7ADA5124AF618A00124FF6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		6D7ADA5324AF630A00124FF6 /* Stations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stations.storyboard; sourceTree = "<group>"; };
+		6D7ADA5A24AF655400124FF6 /* AppDelegate+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Navigation.swift"; sourceTree = "<group>"; };
+		6D7ADA5C24AF67EF00124FF6 /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		6D7ADA5E24AF68B800124FF6 /* UIWindow+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Key.swift"; sourceTree = "<group>"; };
+		6D7ADA6824AF813100124FF6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6D7ADA6B24AF89E500124FF6 /* StationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAPI.swift; sourceTree = "<group>"; };
+		6D7ADA7224AFB65E00124FF6 /* TrainMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainMovement.swift; sourceTree = "<group>"; };
+		6D840A89253A188A00B7EC16 /* Encodable+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+JSON.swift"; sourceTree = "<group>"; };
+		6D840A9C253A23F000B7EC16 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		6D840AA0253A268100B7EC16 /* UIViewController+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loading.swift"; sourceTree = "<group>"; };
+		6DAF20FA2556F2F000554DBE /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		8180BD38BC0ACB3162C1FE4D /* Pods-Raily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raily.debug.xcconfig"; path = "Target Support Files/Pods-Raily/Pods-Raily.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D34785F24AE1F14009BC83F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586119EDA2D67F61F7B3601A /* Pods_Raily.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		172268B16F383BC1004C2E64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8180BD38BC0ACB3162C1FE4D /* Pods-Raily.debug.xcconfig */,
+				521D16436DAF43D472FD6661 /* Pods-Raily.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		33BAE38B56B164E40BB1CC3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6519763C398FF52DC6AE851B /* Pods_Raily.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D0AC47A255BC7DA0062731D /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				6D0AC492255BE13D0062731D /* Cell */,
+				6D0AC485255BCCA70062731D /* StationListViewController.swift */,
+				6D0AC486255BCCA70062731D /* StationListViewController+Delegate.swift */,
+				6D0AC487255BCCA70062731D /* StationListViewModel.swift */,
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
+		6D0AC492255BE13D0062731D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6D0AC493255BE14E0062731D /* StationTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6D0AC497255C192D0062731D /* StationData */ = {
+			isa = PBXGroup;
+			children = (
+				6D0AC49F255C1D5A0062731D /* Cell */,
+				6D0AC498255C196C0062731D /* StationDataTableViewController.swift */,
+				6D0AC49C255C19860062731D /* StationDataViewModel.swift */,
+				6D0AC4AA255C2D860062731D /* StationDataTableViewController+Delegate.swift */,
+			);
+			path = StationData;
+			sourceTree = "<group>";
+		};
+		6D0AC49F255C1D5A0062731D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6D0AC4A0255C1D740062731D /* StationDataTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6D0AC4B0255D33FE0062731D /* TrainMovements */ = {
+			isa = PBXGroup;
+			children = (
+				6D0AC4BF255D37240062731D /* Cell */,
+				6D0AC4B1255D34390062731D /* TrainMovementsTableViewController.swift */,
+				6D0AC4B6255D34DB0062731D /* TrainMovementsViewModel.swift */,
+				6D0AC4BA255D354C0062731D /* TrainMovementsTableViewController+Delegate.swift */,
+			);
+			path = TrainMovements;
+			sourceTree = "<group>";
+		};
+		6D0AC4BF255D37240062731D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6D0AC4C0255D374E0062731D /* TrainMovementTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6D34785924AE1F14009BC83F = {
+			isa = PBXGroup;
+			children = (
+				6D7ADA6624AF74B900124FF6 /* Core */,
+				6D34786424AE1F14009BC83F /* Raily */,
+				6D34786324AE1F14009BC83F /* Products */,
+				172268B16F383BC1004C2E64 /* Pods */,
+				33BAE38B56B164E40BB1CC3F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D34786324AE1F14009BC83F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D34786224AE1F14009BC83F /* Raily.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D34786424AE1F14009BC83F /* Raily */ = {
+			isa = PBXGroup;
+			children = (
+				6D34788624AE1F44009BC83F /* Screens */,
+				6D7ADA6424AF749100124FF6 /* Storyboards */,
+				6D34786524AE1F14009BC83F /* AppDelegate.swift */,
+				6D7ADA5A24AF655400124FF6 /* AppDelegate+Navigation.swift */,
+				6D34786724AE1F14009BC83F /* SceneDelegate.swift */,
+				6D34786E24AE1F16009BC83F /* Assets.xcassets */,
+				6D34787324AE1F16009BC83F /* Info.plist */,
+			);
+			path = Raily;
+			sourceTree = "<group>";
+		};
+		6D34788624AE1F44009BC83F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6D0AC4B0255D33FE0062731D /* TrainMovements */,
+				6D0AC497255C192D0062731D /* StationData */,
+				6D0AC47A255BC7DA0062731D /* Stations */,
+				6D243C2B24B6D85200C0121D /* RootNavigationController.swift */,
+				6D840A9B253A23DD00B7EC16 /* Splash */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6D7ADA6424AF749100124FF6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6D34786B24AE1F14009BC83F /* Main.storyboard */,
+				6D7ADA5324AF630A00124FF6 /* Stations.storyboard */,
+				6D0AC4C4255D38160062731D /* Trains.storyboard */,
+				6D34787024AE1F16009BC83F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6D7ADA6524AF74A400124FF6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6D840A89253A188A00B7EC16 /* Encodable+JSON.swift */,
+				6D7ADA5C24AF67EF00124FF6 /* UIColor+RGB.swift */,
+				6D7ADA5E24AF68B800124FF6 /* UIWindow+Key.swift */,
+				6D840AA0253A268100B7EC16 /* UIViewController+Loading.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6D7ADA6624AF74B900124FF6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6D7ADA5124AF618A00124FF6 /* Utils.swift */,
+				6D7ADA4724AF5DB400124FF6 /* Constants.swift */,
+				6D7ADA6724AF74CD00124FF6 /* UI Subclasses */,
+				6D7ADA6524AF74A400124FF6 /* Extensions */,
+				6D7ADA7424AFB66A00124FF6 /* API */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6D7ADA6724AF74CD00124FF6 /* UI Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				6D243C3924B7532400C0121D /* UIRoundedCornersView.swift */,
+			);
+			path = "UI Subclasses";
+			sourceTree = "<group>";
+		};
+		6D7ADA7424AFB66A00124FF6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6DAF20F72556F2DD00554DBE /* Models */,
+				6D7ADA6824AF813100124FF6 /* API.swift */,
+				6D7ADA6B24AF89E500124FF6 /* StationAPI.swift */,
+				6D0AC4AD255D33620062731D /* TrainAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6D840A9B253A23DD00B7EC16 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				6D840A9C253A23F000B7EC16 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		6DAF20F72556F2DD00554DBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D7ADA7224AFB65E00124FF6 /* TrainMovement.swift */,
+				6DAF20FA2556F2F000554DBE /* Base.swift */,
+				6D0AC48C255BCCE60062731D /* Station.swift */,
+				6D0AC4A4255C1DB80062731D /* StationData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D34786124AE1F14009BC83F /* Raily */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D34787624AE1F16009BC83F /* Build configuration list for PBXNativeTarget "Raily" */;
+			buildPhases = (
+				AEFA873C00F847E39A37B6BB /* [CP] Check Pods Manifest.lock */,
+				6D34785E24AE1F14009BC83F /* Sources */,
+				6D34785F24AE1F14009BC83F /* Frameworks */,
+				6D34786024AE1F14009BC83F /* Resources */,
+				EEF2763F4495879DFCE7A052 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Raily;
+			productName = Raily;
+			productReference = 6D34786224AE1F14009BC83F /* Raily.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D34785A24AE1F14009BC83F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = AppsBG;
+				TargetAttributes = {
+					6D34786124AE1F14009BC83F = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 6D34785D24AE1F14009BC83F /* Build configuration list for PBXProject "Raily" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D34785924AE1F14009BC83F;
+			productRefGroup = 6D34786324AE1F14009BC83F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D34786124AE1F14009BC83F /* Raily */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D34786024AE1F14009BC83F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D34787224AE1F16009BC83F /* LaunchScreen.storyboard in Resources */,
+				6D0AC4C5255D38160062731D /* Trains.storyboard in Resources */,
+				6D34786F24AE1F16009BC83F /* Assets.xcassets in Resources */,
+				6D7ADA5424AF630A00124FF6 /* Stations.storyboard in Resources */,
+				6D34786D24AE1F14009BC83F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AEFA873C00F847E39A37B6BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Raily-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEF2763F4495879DFCE7A052 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Raily/Pods-Raily-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Raily/Pods-Raily-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Raily/Pods-Raily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D34785E24AE1F14009BC83F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D243C2C24B6D85200C0121D /* RootNavigationController.swift in Sources */,
+				6D0AC48A255BCCA70062731D /* StationListViewModel.swift in Sources */,
+				6D840AA1253A268100B7EC16 /* UIViewController+Loading.swift in Sources */,
+				6D7ADA6C24AF89E500124FF6 /* StationAPI.swift in Sources */,
+				6D34786624AE1F14009BC83F /* AppDelegate.swift in Sources */,
+				6D7ADA6924AF813200124FF6 /* API.swift in Sources */,
+				6D0AC488255BCCA70062731D /* StationListViewController.swift in Sources */,
+				6D0AC4B2255D34390062731D /* TrainMovementsTableViewController.swift in Sources */,
+				6D0AC4A1255C1D740062731D /* StationDataTableViewCell.swift in Sources */,
+				6D0AC4C1255D374E0062731D /* TrainMovementTableViewCell.swift in Sources */,
+				6D7ADA5F24AF68B800124FF6 /* UIWindow+Key.swift in Sources */,
+				6DAF20FB2556F2F000554DBE /* Base.swift in Sources */,
+				6D0AC4BB255D354C0062731D /* TrainMovementsTableViewController+Delegate.swift in Sources */,
+				6D34786824AE1F14009BC83F /* SceneDelegate.swift in Sources */,
+				6D0AC4A8255C20880062731D /* Station.swift in Sources */,
+				6D7ADA4924AF5DB500124FF6 /* Constants.swift in Sources */,
+				6D243C3A24B7532400C0121D /* UIRoundedCornersView.swift in Sources */,
+				6D7ADA5D24AF67EF00124FF6 /* UIColor+RGB.swift in Sources */,
+				6D7ADA5B24AF655400124FF6 /* AppDelegate+Navigation.swift in Sources */,
+				6D0AC49D255C19860062731D /* StationDataViewModel.swift in Sources */,
+				6D840A9D253A23F000B7EC16 /* SplashViewController.swift in Sources */,
+				6D0AC4AE255D33620062731D /* TrainAPI.swift in Sources */,
+				6D0AC499255C196C0062731D /* StationDataTableViewController.swift in Sources */,
+				6D0AC489255BCCA70062731D /* StationListViewController+Delegate.swift in Sources */,
+				6D0AC494255BE14E0062731D /* StationTableViewCell.swift in Sources */,
+				6D7ADA7324AFB65E00124FF6 /* TrainMovement.swift in Sources */,
+				6D7ADA5224AF618A00124FF6 /* Utils.swift in Sources */,
+				6D840A8A253A188A00B7EC16 /* Encodable+JSON.swift in Sources */,
+				6D0AC4A5255C1DB80062731D /* StationData.swift in Sources */,
+				6D0AC4B7255D34DB0062731D /* TrainMovementsViewModel.swift in Sources */,
+				6D0AC4AB255C2D860062731D /* StationDataTableViewController+Delegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D34786B24AE1F14009BC83F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D34786C24AE1F14009BC83F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D34787024AE1F16009BC83F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D34787124AE1F16009BC83F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D34787424AE1F16009BC83F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Raily;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D34787524AE1F16009BC83F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = Raily;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D34787724AE1F16009BC83F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8180BD38BC0ACB3162C1FE4D /* Pods-Raily.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6B59PND823;
+				INFOPLIST_FILE = Raily/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsbg.raily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D34787824AE1F16009BC83F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521D16436DAF43D472FD6661 /* Pods-Raily.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6B59PND823;
+				INFOPLIST_FILE = Raily/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsbg.raily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D34785D24AE1F14009BC83F /* Build configuration list for PBXProject "Raily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D34787424AE1F16009BC83F /* Debug */,
+				6D34787524AE1F16009BC83F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D34787624AE1F16009BC83F /* Build configuration list for PBXNativeTarget "Raily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D34787724AE1F16009BC83F /* Debug */,
+				6D34787824AE1F16009BC83F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D34785A24AE1F14009BC83F /* Project object */;
+}
